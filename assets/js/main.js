@@ -118,6 +118,72 @@ let swiper = new Swiper(".mySwiper", {
   keyboard: true,
 });
 
+// Main Freelance Projects Swiper
+const swiperFreelance = new Swiper('.mySwiper2', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.mySwiper2 > .swiper-button-next',
+        prevEl: '.mySwiper2 > .swiper-button-prev',
+    },
+    pagination: {
+        el: '.mySwiper2 > .swiper-pagination',
+        clickable: true,
+    },
+});
+
+// Nested Image Swipers for each project with autoplay
+const swiperProject1 = new Swiper('.mySwiper2_project1', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    navigation: {
+        nextEl: '.mySwiper2_project1 .image-next',
+        prevEl: '.mySwiper2_project1 .image-prev',
+    },
+    pagination: {
+        el: '.mySwiper2_project1 .image-pagination',
+        clickable: true,
+    },
+});
+
+const swiperProject2 = new Swiper('.mySwiper2_project2', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    navigation: {
+        nextEl: '.mySwiper2_project2 .image-next',
+        prevEl: '.mySwiper2_project2 .image-prev',
+    },
+    pagination: {
+        el: '.mySwiper2_project2 .image-pagination',
+        clickable: true,
+    },
+});
+
+const swiperProject3 = new Swiper('.mySwiper2_project3', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+    navigation: {
+        nextEl: '.mySwiper2_project3 .image-next',
+        prevEl: '.mySwiper2_project3 .image-prev',
+    },
+    pagination: {
+        el: '.mySwiper2_project3 .image-pagination',
+        clickable: true,
+    },
+});
+
 // SCROLL SECTIONS ACTIVE LINK
 const sections = document.querySelectorAll("section[id]");
 
